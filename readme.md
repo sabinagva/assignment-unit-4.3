@@ -18,15 +18,26 @@ In this section we will write some functions that might be used in a simple cart
 Update the `cart.js` file to do the following:
 
 - Create a global variable named `basket` and set it to an empty array.
-
+var basket = []
 - Create a function called `addItem`. It should:
   - take an input parameter for a string `item`
   - add the new item to the global array `basket`. 
   - return `true` indicating the item was added
 
+function addItem (item) {
+    basket.push('apple'); 
+    console.log (basket[]);
+  }
+  console.log ()
+
 - Create a function called `listItems`. It should:
   - loop over the items in the `basket` array
   - console.log each individual item on a new line
+  
+  function ListItems () {
+    for (items of basket)
+    console.log ('for of loop', items)
+  }
 
 - Create a function called `empty`. It should:
   - reset the `basket` to an empty array
