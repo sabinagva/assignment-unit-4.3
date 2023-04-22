@@ -36,4 +36,11 @@ var basket = []
 
    //------------Strech Goals-------------------//
 
+   const maxItems = 5;
    
+   function itsFull() {
+    if (basket.length < maxItems) {
+    return false;
+    } else return false;
+  }
+        console.log(itsFull());
