@@ -3,29 +3,37 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 var basket = []
-function addItem (item) {
-   item = basket.push('apple'); 
-    console.log (basket[item]);
-    if (basket.length > 0);
-    return true;
-  }
+    function addItem (item) {
+        basket.push(item); 
+        if (basket.length > 0) {
+        return true;
+        }
+    }  
+    addItem('banana');
+    addItem('orange');
+    addItem('apple');
+        console.log ('basket', basket);
+  
 
 
-  function ListItems () {
-    for (items of basket)
-    console.log ('for of loop', items)
-  }
-
-  function Empty () {
-    return basket[item] = basket[];
+    var basket = ['orange','banana', 'apple']
  
-   }
+    function ListItems () {
+      for (i = 0 ; i < basket.length; i++);
+      return basket;
+    }
+        console.log(ListItems());
+
+   
+ 
+    function Empty () {
+        if (basket.length > 0);
+        return basket.length = 0;
+ 
+    }
+        console.log('current basket array:', Empty());
+      
 
    //------------Strech Goals-------------------//
 
-   const maxItems = 5;
-   function itsFull() {
-    if (basket.length < maxItems) {
-    return false;
-    } else return false;
-  }
+   
