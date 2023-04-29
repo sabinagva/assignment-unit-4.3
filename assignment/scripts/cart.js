@@ -40,7 +40,7 @@ var basket = []
    
    function itsFull() {
     if (basket.length < maxItems) {
-    return false;
+    return true;
     } else return false;
   }
         console.log(itsFull());
